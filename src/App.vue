@@ -1,18 +1,18 @@
 <script setup lang="ts">
 import { ref, onMounted } from 'vue';
 
-const name = ref('');
+const name = ref('Hello World');
 
-onMounted(() => {
-  fetch('api/message')
-    .then((resp) => resp.text())
-    .then((text) => {
-      name.value = text;
-    })
-    .catch((err) => {
-      console.error(err);
-    });
-});
+// onMounted(() => {
+//   fetch('api/message')
+//     .then((resp) => resp.text())
+//     .then((text) => {
+//       name.value = text;
+//     })
+//     .catch((err) => {
+//       console.error(err);
+//     });
+// });
 </script>
 
 <template>
